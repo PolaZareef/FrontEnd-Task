@@ -1,0 +1,152 @@
+.register{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 100px;
+    gap: 10px;
+    position: relative;
+    width: 1355px;
+    height: 610px;
+    background: url("https://img.freepik.com/free-vector/vibrant-summer-ombre-background-vector_53876-105765.jpg?w=2000"), #FFFFFF;
+}
+.error{
+    color: red;
+}
+h1,p{
+    font-family: ' Abdoullah Ashgar EL-kharef';
+}
+img{
+    width: 450px;
+height: 536px;
+    padding: 50px;
+border-radius: 10px;
+}
+.row{
+    background: rgba(245, 247, 255, 0.85);
+    border-radius: 10px;
+}
+.inp{
+    border: 0px;
+    outline: none;
+}
+.input{
+    box-sizing: border-box;
+    
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 8px 20px;
+gap: 12px;
+
+position: relative;
+width: 450px;
+height: 60px;
+margin-bottom: 10px;
+background: #FFFFFF;
+/* light/blue-4
+
+Hovered UI element background
+*/
+border: 1px solid #DBE3FF;
+border-radius: 10px;
+}
+.data{
+    padding: 50px;
+    padding-left: 0px;
+    font-size: small;
+}
+button{
+    width: 450px;
+    height: 60px;
+    background: linear-gradient(113.87deg, #2663DF 14.81%, #758FF0 88.76%);
+    box-shadow: 0px 6px 18px #9CADF2;
+    border-radius: 10px;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    font-weight: bold;
+    color: white;
+    font-family: 'Mulish';
+    }
+    button:hover{
+        cursor: pointer;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .register{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 0px;
+            margin: 0px;
+            width: 440px;
+            height: 610px;
+            background: rgba(245, 247, 255, 0.85);
+            border-radius: 10px;
+            flex: none;
+            order: 0;
+            align-self: stretch;
+            flex-grow: 1;
+        }
+        .input{
+            box-sizing: border-box;
+            
+        
+        /* Auto layout */
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 8px 20px;
+        gap: 12px;
+        
+        position: relative;
+        width: 80%;
+        height: 150%;
+        margin-bottom: 10px;
+        background: #FFFFFF;
+        /* light/blue-4
+        
+        Hovered UI element background
+        */
+        border: 1px solid #DBE3FF;
+        border-radius: 10px;
+        }
+        .data{
+            padding-left: 100px;
+            width: 600px;
+            display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 40px 0px;
+        gap: 40px;
+
+        width: 90%;
+        height: 647px;
+
+        border-radius: 10px;
+
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 1;
+    
+        }
+        img{
+            width: 100%;
+            height: 50%;
+            border-radius: 10px;        
+            flex: none;
+            margin-top: 500px;
+            order: 0;
+            flex-grow: 0;
+        }
+        button{
+            width: 80%;
+        }
+    }

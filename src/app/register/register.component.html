@@ -1,0 +1,39 @@
+<div class="register">
+    <div class="row">
+        <div class="col-sm-6 img">
+            <img src="https://cdn.salla.sa/aobdW/UFdzw93KqImMmgucVlvhR2hapqGl33Cxz1HnzYum.jpg" alt="image">
+        </div>
+        <form  #form="ngForm" class="col-sm-6 data">
+            <h1>Create Account</h1>
+            <p>Go ahead and sign up, let everyone know how awesome you are!</p>
+            <div class="input"><i class="fa fa-user"></i>|
+                <input type="text" class="inp" #name="ngModel" name="name" required pattern="[a-zA-Z]{2,5}[0-9]{1,2}[a-zA-Z]{2,9}" placeholder="Username" [(ngModel)]="username">
+            </div>
+            <div *ngIf="name.invalid && name.dirty" class="error">
+                Please Enter a Valid Name with 5 to 15 Character without start or end with number
+            </div><br>
+            
+            <div class="input"><i class="fa fa-envelope"></i>|
+                <input type="text" class="inp" #mail="ngModel"  name="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="Email" [(ngModel)]="email">
+            </div>
+            <div *ngIf="mail.invalid && mail.dirty" class="error">
+                Email must be in this format 'characters@characters.domain'
+            </div><br>
+
+            <div class="input"><i class="fa fa-lock"></i>|
+                <input type="password" class="inp" #pass="ngModel"  name="password" required minlength="8" placeholder="Password" [(ngModel)]="password">
+            </div>
+            <div *ngIf="pass.invalid && pass.dirty" class="error">
+                Please Enter a Valid Password with at least 8 Character
+            </div><br>
+
+            <div class="input"><i class="fa fa-lock"></i>|
+                <input type="password" class="inp" #Cpass="ngModel"  name="Cpassword" required minlength="8" placeholder="Confirm Password" [(ngModel)]="ComfirmPassword">
+            </div>
+            <div *ngIf="Cpass.invalid && Cpass.dirty" class="error">
+                Please Enter a Valid Password with at least 8 Character
+            </div><br>
+            <button (click)="SaveData()" [disabled]="form.invalid">Create Account</button>
+        </form>
+    </div>
+</div>
